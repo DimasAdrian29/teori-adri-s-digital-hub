@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copy package.json dan install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Copy seluruh file project dan jalankan build
 COPY . .
