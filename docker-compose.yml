@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  react-app:
+    build: .
+    container_name: react-company-profile
+    ports:
+      - "8001:80" # <-- Ubah bagian ini
+    restart: always
